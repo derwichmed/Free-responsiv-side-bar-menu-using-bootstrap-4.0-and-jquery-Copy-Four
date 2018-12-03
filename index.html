@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/my_style.css"/>
+        <link rel="stylesheet" href="../team_profile/css/my_style.css"/>
+        <script src="js/jquery-3.3.1.min (1).js"></script>
+        <script>
+            $(function (){
+               $('.mega_menu').hide(); 
+            });
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/responsiv.js"></script>
+        </head>
+    <body class="container-fluid">
+        <header class="row nav_bar">
+            <div>
+                
+            </div>
+            <nav class="col-lg">
+                <ul class="menu">
+                    <li class="menu_item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg">
+                                    Action
+                                    <img class="drop_down_nav_bar" src="img/drop_down_nav_bar.png"/>
+                                </div>    
+                                <ul class="sub_menu">
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                  <img src="img/create_new_post_icon.png"/>
+                                                  Create new post
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/generate_reports_icon.png"/>
+                                                  Generate reports
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/manage_order_icon.png"/>
+                                                    Manage order
+                                                    <img class="drop_down_sub_menu" src="img/drop_down_sub_menu.png"/>
+                                                    <ul class="sub_menu">
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Latest orders
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Pending orders
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Processes Orders
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Delivery orders
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Payement
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Customers
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/feedback_icon.png"/>
+                                                    Feedbacks
+                                                    <ul class="sub_menu">
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Customers feedbacks
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Supplier feedbacks
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Reviewed feedbacks
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Resolved feedbacks
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Feedbacks reports
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Customers
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/member_register_icon.png"/>
+                                                    Member registers
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="container-fluid sub_menu_border_gabarie">
+                                    <div class="row">
+                                        <div class="col-lg">
+                                            <img class="sub_menu_border" src="img/fleche_01.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_item mega_menu_go">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg">
+                                    Reports
+                                    <img class="drop_down_nav_bar" src="img/drop_down_nav_bar.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mega_menu">
+                            <img src="img/fleche_01.png" style="
+                             position: absolute;
+                             bottom: 98%;
+                             left: 50px;
+                             width: 60px;
+                             height: 30px;
+                             "/>
+                            <div class="col-lg mega_menu_item">
+                                <ul>
+                                    <li>
+                                        Finance reports
+                                        <ul>
+                                            <li>
+                                                Annuel reports
+                                            </li>
+                                            <li>
+                                                HR reports
+                                            </li>
+                                            <li>
+                                                PO reports
+                                            </li>
+                                            <li>
+                                                Finance margins
+                                            </li>
+                                            <li>
+                                                Revenu reports
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <hr/>
+                                </ul> 
+                            </div>
+                            <div class="col-lg mega_menu_item">
+                                <ul>
+                                    <li>
+                                        Project reports
+                                        <ul>
+                                            <li>
+                                                Coca Cola crm
+                                            </li>
+                                            <li>
+                                                Delta aireline booking
+                                                web site
+                                            </li>
+                                            <li>
+                                                Malibu accounting
+                                            </li>
+                                            <li>
+                                                Vineseed website rewamp
+                                            </li>
+                                            <li>
+                                                Zircon mobile app
+                                            </li>
+                                            <li>
+                                                Mercury cms
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <hr/>
+                                </ul> 
+                            </div>
+                            <div class="col-lg mega_menu_item">
+                                <ul>
+                                    <li>
+                                        HR reports
+                                        <ul>
+                                            <li>
+                                                Staff directory
+                                            </li>
+                                            <li>
+                                                Client directory
+                                            </li>
+                                            <li>
+                                                Salary reports
+                                            </li>
+                                            <li>
+                                                Staff payslips
+                                            </li>
+                                            <li>
+                                                Corporate expensif
+                                            </li>
+                                            <li>
+                                                Project expensif
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <hr/>
+                                </ul> 
+                            </div>
+                            <div class="col-lg mega_menu_item">
+                                <ul>
+                                    <li>
+                                        Reporting apps
+                                        <ul>
+                                            <li>
+                                                Report adjusments
+                                            </li>
+                                            <li>
+                                                Sources && Mediums
+                                            </li>
+                                            <li>
+                                                Conversions
+                                            </li>
+                                            <li>
+                                                Report flows
+                                            </li>
+                                            <li>
+                                                Audit && Logs
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <hr/>
+                                </ul> 
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg">
+                                    Apps
+                                    <img class="drop_down_nav_bar" src="img/drop_down_nav_bar.png"/>
+                                
+                                </div>
+                                <ul class="sub_menu">
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/e-commerce_icon.png"/>
+                                                  E-commerce
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/audience_icon.png"/>
+                                                    Audience
+                                                    <img class="drop_down_sub_menu" src="img/drop_down_sub_menu.png"/>
+                                                    <ul class="sub_menu">
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Activ users
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        User explorer
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        User flows
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Market segments
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        User reports
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/manage_order_icon.png"/>
+                                                    Marketing
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/compaingns.png"/>
+                                                    Compaings
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub_menu_item">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg" style="padding: 0px">
+                                                    <img src="img/cloud_manager_icon.png"/>
+                                                    Cloud manager
+                                                    <img class="drop_down_sub_menu" src="img/drop_down_sub_menu.png"/>
+                                                    <ul class="sub_menu">
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        File uploads
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        File attributes
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        Folders
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="sub_menu_item">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-lg" style="padding: 0px">
+                                                                        System settings
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="container-fluid sub_menu_border_gabarie">
+                                    <div class="row">
+                                        <div class="col-lg">
+                                            <img class="sub_menu_border" src="img/fleche_01.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-lg-2 info_nav_header nav_header_mobile">
+                <div class="side_bar_menu_icon">
+                    <img src="img/men_icon.png"/>
+                    <img src="img/nav_bar_menu_icon.png"/>
+                </div>
+                <div class="rx_search_box_navs">
+                    <img class="search_box_in" src="img/search-icon-orange-hi.png" style="
+                         margin-right: 15px
+                         "/>
+                    <img src="img/facebook.png"/>
+                    <img src="img/pintrest.png"/>
+                    <img src="img/google.png"/>
+                </div>
+                <img class="search_box_in" alt="Search box..." src="img/search-icon-orange-hi.png" style="
+                     width: 20px;
+                     height: 20px;
+                     margin-top: 20px;
+                     margin-right: 20px
+                     "/>
+                <div class="search_box">
+                    <div class="input-group mb-3">
+                        <input type="text" autofocus="" class="form-control" placeholder="Search..." style="
+                               border: none
+                               ">
+                        
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="search_box_out" style="
+                                  background-color: white;
+                                  border: none;
+                                  cursor: pointer
+                                  ">
+                                <i class="fa fa-window-close"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/pintrest.png" style="
+                     width: 20px;
+                     height: 20px;
+                     margin-top: 20px
+                     "/>
+                <img src="img/facebook.png" style="
+                     width: 20px;
+                     height: 20px;
+                     margin-top: 20px
+                     "/>
+                <img src="img/google.png" style="
+                     width: 20px;
+                     height: 20px;
+                     margin-top: 20px
+                     "/>
+            </div>
+        </header>
+        <section class="row">
+            <nav class="container-fluid side_bar">
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/dashbord_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Dashbord
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/layout_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Layout
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Layout
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Menu collapsed
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Menu expended
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Grid scafolding
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Layout grid
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Different Headers
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Pannel transition
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Boxded layout
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Two columns
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Borders headers
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Page aside
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/page_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Pages
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Page
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Errors 
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            FAQ
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Galery
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Galety grid
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Maps
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Search results
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Maintennance
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Forget password
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Login
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Register
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Login v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Register v1
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/basic_user_interface_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Basiv UI
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/advenced_ui_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Advenced UI
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/structure_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Structure UI
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/widget_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Widget
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/form_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Form
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/tables_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Tables
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/chart_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Charts
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <div class="row justify-content-between side_bar_item">
+                    <div class="icon">
+                        <img src="img/apps_icon.png"/>
+                    </div>
+                    <div class="title">
+                        Apps
+                    </div>
+                    <div class="drop_down">
+                        <img src="img/drop_down_icon.png"/>
+                    </div>
+                    <div class="container-fluid sub_side_bar">
+                        <div class="row header">
+                            <img src="img/back_fleche.png"/>
+                            Dashbord
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v1
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Dashbord v2
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            E-commerce
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Anaytics
+                        </div>
+                        <div class="row sub_side_bar_item">
+                            Teams
+                        </div>
+                        <hr style="background-color: #96a0aa"/>
+                    </div>
+                </div>
+                <hr style="background-color: #96a0aa"/>
+            </nav>
+            <!-- write your web site body here !!! -->
+            <section class="col-lg offset-lg-1 body">
+                
+            </section>
+        </section>
+    </body>
+</html>
